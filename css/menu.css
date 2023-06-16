@@ -103,6 +103,7 @@ header {
 }
 .headerLinks{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .icons i{
@@ -181,7 +182,13 @@ footer nav p{
     display: flex;
     justify-content: space-around;
 }
-
+@media (max-width: 890px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
